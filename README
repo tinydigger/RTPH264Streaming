@@ -1,0 +1,9 @@
+DESCRIPTION:
+    This is a project for RTP streaming with H264 payload.
+COMPILE:
+    Run 'make' in root dir. RTP lib and test app will be generated in target folder.
+
+USAGE EXAMPLE:
+    1. Use gstreamer as receiver: gst-launch-1.0 udpsrc port=5004 caps="application/x-rtp, media=(string)video, clock-rate=(int)90000, encoding-name=(string)H264, payload=(int)96" ! rtph264depay ! avdec_h264 ! autovideosink
+
+    2. Run 'rtpencoder test.264 127.0.0.1 5004' as sender. It will parse a local h264 file encode it to RTP package and send to localhost's port 5004.
