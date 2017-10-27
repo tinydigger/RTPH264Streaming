@@ -1,5 +1,6 @@
 DESCRIPTION:
-    This is a project for RTP streaming with H264 payload.
+    This is a project for RTP streaming with H264 payload. It provides rtp encoder and decoder libraries, which can be used as a rtp sender and receiver.
+    Test app is also available for understanding how to use rtp libraries.
 COMPILE:
     Run 'make' in root dir. RTP lib and test app will be generated in target folder.
 
